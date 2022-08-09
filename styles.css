@@ -1,0 +1,19 @@
+.gameDiv {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.userScore {
+  margin-bottom: 25px;
+  margin-top: -15px;
+}
+
+#board {
+  border: 5px solid;
+  border-color: black;
+}

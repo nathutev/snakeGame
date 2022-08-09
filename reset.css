@@ -1,0 +1,45 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  align-items: center;
+  text-align:center;
+}
+
+.resetGameButtonDiv {
+  text-align:center;
+  align-items: center;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.reset {
+  background-color: #06af22;
+  border: 8px;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  transition: opacity 0.15s;
+  width: 116px;
+}
+
+.reset:hover {
+  opacity: 0.8;
+}
+
+.reset:active {
+  opacity: 0.5;
+}
