@@ -1,0 +1,121 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.buttons {
+  align-items: center;
+  text-align:center;
+}
+
+.resetGameButtonDiv, .changeLogButtonDiv, .howToPlayButtonDiv {
+  text-align:center;
+  align-items: center;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.textP {
+  margin-bottom: -5px;
+  line-height: 1.5;
+}
+
+.modal {
+  display: inline-block;
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  display: none;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  top: 0%;
+}
+
+.modal-window {
+  background-color: #FFFFFF;
+  width: 50%;
+  margin: 10% auto;
+  padding: 10px 20px 20px 20px;
+  justify-content: space-between;
+  border-radius: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 310px;
+}
+
+.title {
+  margin-top: -5px;
+  margin-left: -15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+#buttonClose {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.close {
+  top: 0;
+  right: 0;
+  color: rgba(0,0,0,0.3);
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  color: #000000;
+}
+
+.open {
+    display: block;
+}
+
+#buttonOpen, .reset {
+  background-color: #06af22;
+  border: 8px;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  transition: opacity 0.15s;
+  width: 116px;
+}
+
+#buttonOpen:hover, .reset:hover {
+  opacity: 0.8;
+}
+
+#buttonOpen:active, .reset:active{
+  opacity: 0.5;
+}

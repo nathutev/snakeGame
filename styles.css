@@ -1,12 +1,16 @@
 .gameDiv {
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   align-items: center;
-}
-
-p {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
+
+.titleGame {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+
 
 .userScore {
   margin-bottom: 25px;
