@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="z - snake.ico"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styleButtons.css">
+    <script defer src="script.js"></script>
+    <script defer src="buttons.js"></script>
+    <title>Snake Game by nath.utev</title>
+  </head>
+  <body>
+    <div class="gameDiv">
+      <h1 class="titleGame">🐍Snake Game🐍</h1>
+      <canvas class="board" id="board"></canvas>
+      <p>🥭Mangos eaten:</p>
+      <p class="userScore" id="userScore">0</p>
+    </div>
+
+    <div class="buttons">
+      <div class="changeLogButtonDiv">
+        <button id="buttonOpen" data-target="simpleModal_1" data-toggle="modal">Change log</button>
+      </div>
+
+      <div class="resetGameButtonDiv">
+        <button id="reset" class="reset"><a href="">Reset game</a></button>
+      </div>
+      
+      <div class="howToPlayButtonDiv">
+        <button id="buttonOpen" data-target="simpleModal_2" data-toggle="modal">How to play?</button>
+      </div>
+    </div>
+
+    <div id="simpleModal_1" class="modal">
+      <div class="modal-window">
+        <div class="header">
+          <div class="title">Change log</div>
+          <button id="buttonClose" data-dismiss="modal">&times;</button>
+        </div>
+        <p class="textP">        
+          1.1 - changelog and how to play button added
+          <br>
+          1.0 - release
+        </p>
+      </div>
+    </div>
+
+    <div id="simpleModal_2" class="modal">
+      <div class="modal-window">
+        <div class="header">
+          <div class="title">How to play?</div>
+          <button id="buttonClose" data-dismiss="modal">&times;</button>
+        </div>
+        <p class="textP">
+          &#8592; to go left🐍
+          <br>
+          &#8593; to go up🐍
+          <br>
+          &#8594; to go right🐍
+          <br>
+          &#8595; to go down🐍
+          <br>
+          Eat as many mangos as you can 🥭!
+          <br>
+          When game is over, press <b>Reset game</b>🐍.
+          <br>
+          Good luck!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
