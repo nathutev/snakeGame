@@ -1,13 +1,3 @@
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.buttons {
-  align-items: center;
-  text-align:center;
-}
-
 .resetGameButtonDiv, .changeLogButtonDiv, .howToPlayButtonDiv {
   text-align:center;
   align-items: center;
@@ -15,7 +5,12 @@ a {
   margin-right: 5px;
 }
 
-.textP {
+.buttons {
+  align-items: center;
+  text-align:center;
+}
+
+.popUpBody {
   margin-bottom: -5px;
   line-height: 1.5;
 }
@@ -33,7 +28,7 @@ a {
   top: 0%;
 }
 
-.modal-window {
+.popUpWindow {
   background-color: #FFFFFF;
   width: 50%;
   margin: 10% auto;
@@ -45,14 +40,7 @@ a {
   width: 310px;
 }
 
-.title {
-  margin-top: -5px;
-  margin-left: -15px;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.header {
+.popUpHeader {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -60,13 +48,22 @@ a {
   border-bottom: 1px solid black;
 }
 
-#buttonClose {
+.popUpTitle {
+  margin-top: -5px;
+  margin-left: -15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#popUpButtonClose {
+  margin-right: -18px;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
   font-size: 1.25rem;
   font-weight: bold;
+  transition: opacity 0.15s;
 }
 
 .close {
@@ -91,7 +88,7 @@ a {
     display: block;
 }
 
-#buttonOpen, .reset {
+#popUpButtonOpen, .reset {
   background-color: #06af22;
   border: 8px;
   border-radius: 8px;
@@ -112,10 +109,15 @@ a {
   width: 116px;
 }
 
-#buttonOpen:hover, .reset:hover {
+#popUpButtonOpen:hover, #popUpButtonClose:hover, .reset:hover {
   opacity: 0.8;
 }
 
-#buttonOpen:active, .reset:active{
+#popUpButtonOpen:active, #popUpButtonClose:active, .reset:active{
   opacity: 0.5;
+}
+
+.resetGameLink {
+  color: white;
+  text-decoration: none;
 }

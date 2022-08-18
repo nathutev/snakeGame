@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="z - snake.ico"/>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styleButtons.css">
     <script defer src="script.js"></script>
     <script defer src="buttons.js"></script>
@@ -22,25 +21,27 @@
 
     <div class="buttons">
       <div class="changeLogButtonDiv">
-        <button id="buttonOpen" data-target="simpleModal_1" data-toggle="modal">Change log</button>
+        <button id="popUpButtonOpen" data-target="changeLogPopUp" data-toggle="modal">Change log</button>
       </div>
 
       <div class="resetGameButtonDiv">
-        <button id="reset" class="reset"><a href="">Reset game</a></button>
+        <button id="reset" class="reset"><a class="resetGameLink" href="">Reset game</a></button>
       </div>
       
       <div class="howToPlayButtonDiv">
-        <button id="buttonOpen" data-target="simpleModal_2" data-toggle="modal">How to play?</button>
+        <button id="popUpButtonOpen" data-target="howToPlayPopUp" data-toggle="modal">How to play?</button>
       </div>
     </div>
 
-    <div id="simpleModal_1" class="modal">
-      <div class="modal-window">
-        <div class="header">
-          <div class="title">Change log</div>
-          <button id="buttonClose" data-dismiss="modal">&times;</button>
+    <div id="changeLogPopUp" class="modal">
+      <div class="popUpWindow">
+        <div class="popUpHeader">
+          <div class="popUpTitle">Change log</div>
+          <button id="popUpButtonClose" data-dismiss="modal">&times;</button>
         </div>
-        <p class="textP">        
+        <p class="popUpBody">
+          1.2 - bug fixes, graphic features
+          <br>
           1.1 - changelog and how to play button added
           <br>
           1.0 - release
@@ -48,13 +49,13 @@
       </div>
     </div>
 
-    <div id="simpleModal_2" class="modal">
-      <div class="modal-window">
-        <div class="header">
-          <div class="title">How to play?</div>
-          <button id="buttonClose" data-dismiss="modal">&times;</button>
+    <div id="howToPlayPopUp" class="modal">
+      <div class="popUpWindow">
+        <div class="popUpHeader">
+          <div class="popUpTitle">How to play?</div>
+          <button id="popUpButtonClose" data-dismiss="modal">&times;</button>
         </div>
-        <p class="textP">
+        <p class="popUpBody">
           &#8592; to go left🐍
           <br>
           &#8593; to go up🐍
