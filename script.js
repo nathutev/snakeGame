@@ -30,7 +30,7 @@ window.onload = function() {
   
   document.addEventListener("keyup", movement);
   
-  setInterval(update, 1000/10);
+  setInterval(update, 10000/100);
 }
 
 function update() {

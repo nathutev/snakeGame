@@ -1,0 +1,67 @@
+@-webkit-keyframes slidein {
+  from { transform: translateX(30%); }
+    to { transform: translateX(0%); }
+}
+@keyframes slidein {
+  from {  transform: translateX(30%); }
+    to { transform: translateX(0%); }
+}
+
+.githubImg, .instagramImg, .telegramImg {
+  width: 40px;
+  height: 40px;
+  color: #000000;
+  transition: color 100ms;
+}
+
+.githubImg:hover, .instagramImg:hover, .telegramImg:hover {
+  opacity: 0.7;
+}
+
+.githubImg:active, .instagramImg:active, .telegramImg:active {
+  opacity: 0.5;
+}
+
+.telegramDiv {
+  margin-top: -710px;
+  margin-left: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.instagramDiv, .githubDiv {
+  margin-top: 10px;
+  margin-left: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.githubImg, .instagramImg, .telegramImg {
+  width: 40px;
+  height: 40px;
+}
+
+.tooltipSocials {
+	display: none;
+	position: fixed;
+	background: #06af22;
+  border: 1px solid #06af22;
+  border-radius: 3px 10px 10px 3px;
+  color: white;
+	width: auto;
+  height: auto;
+	margin-left: 50px;
+  margin-top: -43px;
+  transition: display 2s;
+}
+
+.tooltipText1, .tooltipText2, .tooltipText3 {
+  font-size: 14px;
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+}
+
+.aSocials:hover + .tooltipSocials {
+  display: block;
+  -webkit-animation: slidein .5s;
+  animation: slidein .5s;
+}
